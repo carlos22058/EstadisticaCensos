@@ -1,0 +1,188 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    color: #ededed;
+    background: #081b29;
+}
+.portada1
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10px;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 100;
+}
+.portada2 {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: portada2amn 1s ease forwards;
+}
+.navegador a {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: navegadoramn .5s ease forwards;
+}
+.navegador a:hover{
+    color: rgb(4, 166, 230);
+    display: inline-block;
+    padding: 10px 10px;
+    background: #0ef;
+    border-radius: 30px;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+.inicio{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url("imagen-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.inicio-cts {
+    max-width: 500px;
+}
+.inicio-cts h3{
+    font-size: 35px;
+    font-weight: 700;
+    animation: inicioamn 1s ease forwards;
+    animation-delay: .7s;
+}
+.inicio-cts h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3PX 0;
+    animation: inicioamn2 1s ease forwards;
+    animation-delay: .8s;
+}
+.inicio-cts P{
+    font-size: 20PX;
+    opacity: 0;
+    animation: inicioamn3 1s ease forwards;
+    animation-delay: 1s ;
+}
+.fin1 {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.fin1:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+.seccion2{
+display: flex;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+gap: 1.5rem;
+}
+.seccion2-img img{
+padding-bottom: 20%;
+max-width: 630px;
+height: auto;
+width: 100%;
+border-radius: 8px;
+}
+.seccion2-texto H2{
+    font-size: 60px;
+}
+.seccion2-texto h2 span{
+    color: cyan;
+}
+.seccion2-texto h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.seccion2-texto p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+@keyframes portada2amn {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes inicioamn3 {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes navegadoramn {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes inicioamn {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes inicioamn2 {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translateX(0px);
+        opacity: 2;
+    }
+}
